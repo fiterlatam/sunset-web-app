@@ -167,7 +167,7 @@ export class CreateChargeComponent implements OnInit {
       'chargeCalculationTypeFilterAval': [false],
       'chargeCalculationTypeFilterHonorarios': [false],
       'chargeCalculationTypeFilterTerm': [false],
-      'chargeCalculationTypeFilterLifeInsurance': [false],
+      'chargeCalculationTypeFilterLifeInsurance': [false],      
       'parentChargeId': ['', Validators.required],
       'interestRateId': [''],
     });
@@ -397,7 +397,7 @@ export class CreateChargeComponent implements OnInit {
       this.router.navigate(['../'], {relativeTo: this.route});
     });
   }
-// eslint-disable-next-line sonarjs/cognitive-complexity
+
   enableOrDisableCupoMaxSellField(itemName: String, selected: boolean) {
     this.chargeCalculationTypeData = [];
     const lookForWordsArray: any = [];
@@ -451,7 +451,7 @@ export class CreateChargeComponent implements OnInit {
     if (this.chargeForm.value.chargeCalculationTypeFilterLifeInsurance) {
       lookForWordsArray.push('lifeinsurance');
       isFilterApplied = true;
-    }
+    }    
 
     if (this.chargeForm.value.chargeCalculationTypeFilterTerm) {
       lookForWordsArray.push('percentofanothercharge');

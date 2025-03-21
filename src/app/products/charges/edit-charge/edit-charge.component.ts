@@ -134,7 +134,7 @@ export class EditChargeComponent implements OnInit {
 
     if (selectedCalculationTypeCode.indexOf('lifeinsurance') !== -1) {
       this.chargeForm.get('chargeCalculationTypeFilterLifeInsurance').setValue(true);
-    }
+    }    
   }
 
   ngOnInit() {
@@ -192,17 +192,17 @@ export class EditChargeComponent implements OnInit {
   private addInsuranceControls(voluntaryInsuranceData: any) {
     if (voluntaryInsuranceData) {
       const insuranceControls = {
-        'insuranceName': [voluntaryInsuranceData.insuranceName],
-        'insuranceChargedAs': [voluntaryInsuranceData.insuranceChargedAs],
-        'insuranceCompany': [voluntaryInsuranceData.insuranceCompany],
-        'insurerName': [voluntaryInsuranceData.insurerName],
-        'insuranceCode': [voluntaryInsuranceData.insuranceCode],
-        'insurancePlan': [voluntaryInsuranceData.insurancePlan],
-        'baseValue': [voluntaryInsuranceData.baseValue],
-        'vatValue': [voluntaryInsuranceData.vatValue],
-        'totalValue': [voluntaryInsuranceData.totalValue],
-        'deadline': [voluntaryInsuranceData.deadline],
-        'daysInArrears': [voluntaryInsuranceData.daysInArrears || 0],
+        'insuranceName': [voluntaryInsuranceData?.insuranceName],
+        'insuranceChargedAs': [voluntaryInsuranceData?.insuranceChargedAs],
+        'insuranceCompany': [voluntaryInsuranceData?.insuranceCompany],
+        'insurerName': [voluntaryInsuranceData?.insurerName],
+        'insuranceCode': [voluntaryInsuranceData?.insuranceCode],
+        'insurancePlan': [voluntaryInsuranceData?.insurancePlan],
+        'baseValue': [voluntaryInsuranceData?.baseValue],
+        'vatValue': [voluntaryInsuranceData?.vatValue],
+        'totalValue': [voluntaryInsuranceData?.totalValue],
+        'deadline': [voluntaryInsuranceData?.deadline],
+        'daysInArrears': [voluntaryInsuranceData?.daysInArrears || 0],
       };
 
       Object.entries(insuranceControls).forEach(([key, value]) => {
@@ -388,7 +388,7 @@ export class EditChargeComponent implements OnInit {
       });
   }
 
-// eslint-disable-next-line sonarjs/cognitive-complexity
+
   enableOrDisableCupoMaxSellField(itemName: String, selected: boolean) {
     this.chargeCalculationTypeOptions = [];
     const lookForWordsArray: any = [];
@@ -450,7 +450,7 @@ export class EditChargeComponent implements OnInit {
     if (this.chargeForm.value.chargeCalculationTypeFilterLifeInsurance) {
       lookForWordsArray.push('lifeinsurance');
       isFilterApplied = true;
-    }
+    }    
 
     if (this.chargeForm.value.chargeCalculationTypeFilterInsuranceType) {
       lookForWordsArray.push('segurovoluntarioasistencia');
