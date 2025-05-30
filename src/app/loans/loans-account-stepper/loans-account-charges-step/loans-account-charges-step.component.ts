@@ -151,7 +151,7 @@ export class LoansAccountChargesStepComponent implements OnInit, OnChanges {
               chargeTimeType: this.chargeData[informationIndex].chargeTimeType,
               chargeCalculationType: this.chargeData[informationIndex].chargeCalculationType,
               currency: this.chargeData[informationIndex].currency,
-              amount: this.chargeData[informationIndex].amount,
+              amount: this.chargeData[informationIndex]?.amount,
               amountPaid: 0,
               amountWaived: 0,
               amountWrittenOff: 0,
