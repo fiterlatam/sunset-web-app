@@ -4,7 +4,6 @@
   "Remember me": "Recordar me",
   "errors": {
     "error.msg.loan.advanced.payment.not.allowed" : "Los pagos anticipados no están permitidos para este préstamo.",
-    "error.msg.loan.revolving.credit.overpayment.not.allowed": "No se permiten pagos en exceso para préstamos de crédito revolvente.",
     "error.msg.invalid.authentication.request.body": "Cuerpo de solicitud de autenticación no válido",
     "error.msg.microsoft.sso.login.failed": "Error al iniciar sesión con Microsoft SSO",
     "error.msg.authentication.failed": "Error de autenticación",
@@ -384,7 +383,8 @@
     "validation.msg.cannot.undo.disbursal.with.active.transaction": "Undo Disbursal is not allowed for loans with existing transactions. You may undo the transactions first.",
     "Reduce Installment Amount Desc": "Reduce el valor de la cuota, mantiene el plazo.",
     "Reduce Term Desc": "Paga tu préstamo más rápido, mantiene el valor de la cuota.",
-    "error.msg.loan.channel.repayment.overpaid.linked.savings.account.not.present": "No existe una cuenta de ahorros vinculada al credito para transferir balance sobrepagado"
+    "error.msg.loan.channel.repayment.overpaid.linked.savings.account.not.present": "No existe una cuenta de ahorros vinculada al credito para transferir balance sobrepagado",
+    "error.msg.loan.revolving.credit.overpayment.not.allowed": "No se permiten sobrepagos de Crédito Rotativo"
   },
   "labels": {
     "breadcrumbs": {
