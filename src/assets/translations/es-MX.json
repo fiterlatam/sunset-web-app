@@ -3,7 +3,6 @@
   "Logged in as": "Conectado como",
   "Remember me": "Recordar me",
   "errors": {
-    "error.msg.loan.advanced.payment.not.allowed" : "Los pagos anticipados no están permitidos para este préstamo.",
     "error.msg.invalid.authentication.request.body": "Cuerpo de solicitud de autenticación no válido",
     "error.msg.microsoft.sso.login.failed": "Error al iniciar sesión con Microsoft SSO",
     "error.msg.authentication.failed": "Error de autenticación",
@@ -1146,6 +1145,7 @@
       "Advanced Payments": "Abonos a capital"
     },
     "inputs": {
+      "accelerate": "Acelerar",
       "Net Disbursal Amount": "Monto neto desembolsado",
       "Total Disbursement Fees": "Total de comisiones de desembolso",
       "Disbursement Fees": "Comisiones de desembolso",
@@ -1676,6 +1676,10 @@
       "Frequency Type": "Tipo de frecuencia",
       "Frequency for compounding": "Frecuencia de capitalización",
       "Frequency for recalculate Outstanding Principal": "Frecuencia para recalcular el capital pendiente",
+      "Freeze Current Interest": "Congelar interés corriente",
+      "Freeze Interest Arrears": "Congelar interés de mora",
+      "Freeze Life Insurance": "Congelar seguro de vida",
+      "Freeze Mi pyme": "Congelar Mi Pyme",
       "Friday": "Viernes",
       "From": "De",
       "From Account": "De la cuenta",
@@ -2677,7 +2681,8 @@
         "Action": "Acción"
       },
       "Endorsed": "Endosado",
-      "Advanced Payments": "Permitir pagos adelantados"
+      "Advanced Payments": "Permitir pagos adelantados",
+      "Accelerate": "Acelerar"
     },
     "links": {
       "Community": "Comunidad",
