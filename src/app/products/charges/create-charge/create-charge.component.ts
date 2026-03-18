@@ -92,8 +92,8 @@ export class CreateChargeComponent implements OnInit {
     this.route.data.subscribe((data: { chargesTemplate: any }) => {
       this.chargesTemplateData = data.chargesTemplate;
       if (data.chargesTemplate.incomeOrLiabilityAccountOptions.liabilityAccountOptions) {
-        this.incomeAndLiabilityAccountData = data.chargesTemplate.incomeOrLiabilityAccountOptions.incomeAccountOptions
-          .concat(data.chargesTemplate.incomeOrLiabilityAccountOptions.liabilityAccountOptions);
+        this.incomeAndLiabilityAccountData = data.chargesTemplate.incomeOrLiabilityAccountOptions.incomeAccountOptions;
+          // .concat(data.chargesTemplate.incomeOrLiabilityAccountOptions.liabilityAccountOptions);
       } else {
         this.incomeAndLiabilityAccountData = data.chargesTemplate.incomeOrLiabilityAccountOptions.incomeAccountOptions;
       }
@@ -167,7 +167,7 @@ export class CreateChargeComponent implements OnInit {
       'chargeCalculationTypeFilterAval': [false],
       'chargeCalculationTypeFilterHonorarios': [false],
       'chargeCalculationTypeFilterTerm': [false],
-      'chargeCalculationTypeFilterLifeInsurance': [false],      
+      'chargeCalculationTypeFilterLifeInsurance': [false],
       'parentChargeId': ['', Validators.required],
       'interestRateId': [''],
     });
@@ -451,7 +451,7 @@ export class CreateChargeComponent implements OnInit {
     if (this.chargeForm.value.chargeCalculationTypeFilterLifeInsurance) {
       lookForWordsArray.push('lifeinsurance');
       isFilterApplied = true;
-    }    
+    }
 
     if (this.chargeForm.value.chargeCalculationTypeFilterTerm) {
       lookForWordsArray.push('percentofanothercharge');
